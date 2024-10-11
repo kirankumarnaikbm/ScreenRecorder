@@ -1,3 +1,4 @@
+confirm("Allow Camera");
 let video=document.querySelector("video");
 
 let recordBtnCont=document.querySelector(".record-btn-cont");
@@ -11,7 +12,6 @@ let constraints={
     audio:false,
     video:true,
 }
-confirm("Allow Camera");
 
 let recorder;
 
@@ -20,6 +20,7 @@ let chunks=[];
 navigator.mediaDevices.getUserMedia(constraints)
 .then((stream)=>{
     video.srcObject=stream;
+    video.style.transform = 'scaleX(-1)';
     recorder= new MediaRecorder(stream);
     recorder.addEventListener("start",(e)=>{
         chunks=[];

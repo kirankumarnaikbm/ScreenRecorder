@@ -86,6 +86,38 @@ body{
     justify-content: center;
 }
 
-.timer{
-    display: none;
+
+@media screen and (orientation: portrait) {
+    .action-cont{
+        height: 5rem;
+        width: 12rem;
+        position: absolute;
+        top: calc((100vh - 8rem));
+        right: calc((100vw - 12rem) / 2);
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .action-cont>*{
+        height: 100%;
+        width: 5rem;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .timer-cont{
+        height: 5rem;
+        width: 6rem;
+        position: absolute;
+        top: calc((100vh - 13rem));
+        left: calc((100vw - 6rem) / 2);
+        color: #fff;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
