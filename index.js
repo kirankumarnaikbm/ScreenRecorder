@@ -9,7 +9,7 @@ let captureBtn=document.querySelector(".capture-btn");
 let recordFlag=false;
 
 let constraints={
-    audio:false,
+    audio:true,
     video:true,
 }
 
