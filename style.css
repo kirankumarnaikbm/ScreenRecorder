@@ -85,15 +85,18 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+.timer{
+    display: none;
+}
 
 
 @media screen and (orientation: portrait) {
     .action-cont{
-        height: 5rem;
-        width: 12rem;
+        height: 3rem;
+        width: 9rem;
         position: absolute;
-        top: calc((100vh - 8rem));
-        right: calc((100vw - 12rem) / 2);
+        top: calc((100vh - 5rem));
+        right: calc((100vw - 9rem) / 2);
         color: #fff;
         display: flex;
         flex-direction: row;
@@ -101,23 +104,35 @@ body{
     }
     .action-cont>*{
         height: 100%;
-        width: 5rem;
+        width: 3rem;
         border-radius: 50%;
-        border: 5px solid #fff;
+        border: 3px solid #fff;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .timer-cont{
-        height: 5rem;
-        width: 6rem;
+        height: 3rem;
+        width: 5rem;
         position: absolute;
-        top: calc((100vh - 13rem));
+        top: calc((100vh - 9rem));
         left: calc((100vw - 6rem) / 2);
         color: #fff;
         font-size: 0.8rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .record-btn{
+        background-color: red;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+    }
+    .capture-btn{
+        background-color: #fff;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
     }
 }
